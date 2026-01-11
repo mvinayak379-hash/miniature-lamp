@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vyla entertainment</title>
+  <style>
+    :root {
+      --blue: #a7c7e7;
+      --pink: #f7b6d2;
+      --lavender: #d6c9f0;
+      --white: #ffffff;
+      --black: #1f1f1f;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f5f6fa;
+      color: var(--black);
+    }
+
+    /* TOP BAR (Amazon-style) */
+    .topbar {
+      background: linear-gradient(90deg, var(--blue), var(--lavender));
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ff5fa2;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+      font-size: 0.95rem;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    /* HERO BANNER */
+    .hero {
+      background: linear-gradient(to right, var(--pink), var(--lavender));
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    /* AMAZON-LIKE GRID */
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #ff5fa2;
+      margin-bottom: 10px;
+    }
+
+    .emoji {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 16px;
+      background: var(--lavender);
+      border-radius: 20px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="logo">☁️ VYLA<span>entertainment</span></div>
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">Apply</a>
+    <a href="#">Staff</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Where Cute Ideas Come True ☁️🌙</h1>
+  <p>Creative • Dreamy • Aesthetic • Community-driven</p>
+</div>
+
+<!-- AMAZON STYLE CARDS -->
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <div class="emoji">☁️</div>
+      <h3>About Us</h3>
+      <p>A creative company inspired by clouds, stars, and the moon. We build dreamy and meaningful projects.</p>
+      <a class="btn" href="#">Learn more</a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">👩‍💼</div>
+      <h3>CEO – Viji</h3>
+      <p>Founder & CEO. Creative, calm, and visionary. Believes in building a kind and inspiring workspace.</p>
+      <a class="btn" href="#">Read story</a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🚀</div>
+      <h3>Ongoing Projects</h3>
+      <p>Creative content, aesthetic branding, and community-based projects currently in progress.</p>
+      <a class="btn" href="#">View projects</a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🌈</div>
+      <h3>Upcoming Vision</h3>
+      <p>New collaborations, team expansion, and original themed launches coming soon.</p>
+      <a class="btn" href="#">See vision</a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">📝</div>
+      <h3>Join Our Team</h3>
+      <p>Audition required. Apply via form and message our Pinterest with your name & role.</p>
+      <a class="btn" href="#">Apply now</a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">👥</div>
+      <h3>Staff & Vacancies</h3>
+      <p>See which roles are filled and which cute positions are still open.</p>
+      <a class="btn" href="#">View staff</a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  ☁️⭐🌙 Dreamy Clouds Studio • Made with love & imagination
+</footer>
+
+</body>
+</html>
+
